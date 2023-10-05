@@ -1,16 +1,12 @@
 @import url('timeline.css');
 
-body {
-  width: 100vw;
-}
-
 #background {
   background-color: #0f172a;
+  margin-top: 100px;
 }
 
 .container {
   color: #E1E8F0;
-  height: 100%;
   border: 1px solid blue;
 }
 
@@ -22,6 +18,7 @@ body {
 .contact-link {
   color: #E1E8F0;
 }
+
 
 /*==================== Delete Later ====================*/
 .layout1 {
