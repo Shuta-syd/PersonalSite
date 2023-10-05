@@ -15,6 +15,7 @@ body {
 
 .contact-list {
   list-style: none;
+  margin-bottom: 8px;
 }
 
 .contact-link {
