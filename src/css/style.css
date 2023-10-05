@@ -7,8 +7,9 @@
 
 .container {
   color: #E1E8F0;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
+
 
 .contact-list {
   list-style: none;
@@ -22,9 +23,9 @@
 
 /*==================== Delete Later ====================*/
 .layout1 {
-  border: 1px solid beige;
+  /* border: 1px solid beige; */
 }
 
 .layout2 {
-  border: 1px solid beige;
+  /* border: 1px solid beige; */
 }
