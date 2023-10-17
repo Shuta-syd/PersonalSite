@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('timeline.css');
 
 #background {
@@ -27,12 +30,14 @@
   border-radius: 10%;
 }
 
-
-/*==================== Delete Later ====================*/
-.layout1 {
-  /* border: 1px solid beige; */
+.text-left {
+  margin-bottom: 40px;
 }
 
-.layout2 {
-  /* border: 1px solid beige; */
+.gap_class {
+  gap: 5px;
+}
+
+.no-underline {
+  text-decoration: none;
 }
