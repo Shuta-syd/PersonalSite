@@ -1,6 +1,27 @@
 import Link from "next/link";
 
-export function EducationComponent() {
+type ContentMap = {
+  [key: string]: {
+    [title: string]: string;
+  };
+};
+
+const content: ContentMap = {
+  en: {
+    seame: "SEA:ME is a cutting-edge advanced study program.It trains specialists in Code-driven Mobility, Autonomous Mobility, and the future Mobility Ecosystems. With expert-led content and practical guidance.",
+    ftTokyo: "42 is a future-proof computer science training to educate the next generation of software engineers. I learned C, C++, Typescript, python, and Go. Projects include bash reimplementation, Internet Relay Chat Server, Chat Pong game app, libc reimplementation, 3D ray tracing.",
+    univ: "I am majoring in economics with minors in agricultural economics and data science. I learned Keynesian economics, Marxian economics, public economics, and micro economics."
+  },
+  jp: {
+    seame: "SEA:MEは、組み込みから自動運転、モビリティエコシステムまで自動車に関するソフトウェア開発を学ぶプログラムです。C++, Python, AI/MLなどを学んでいます。",
+    ftTokyo: "42は、自由で革新的かつ包括的な、世界最大のエンジニア養成機関です。Bash再実装, チャットアプリ, 3Dレイトレーシングなどのプロジェクトを通して、C, C++, Typescript, Dockerなどを学びました。",
+    univ: "経済学を専攻しており、マクロ/ミクロ経済学、ケインズ経済学、マルクス経済学、公共経済学などを学んでいます。",
+  }
+}
+
+export function EducationComponent(props: { lang: string }) {
+  const lang = props.lang;
+
   return (
     <section id="education" className="text-left">
       <h2>Education</h2>
@@ -20,7 +41,7 @@ export function EducationComponent() {
                 </div>
               </Link>
               <p>
-                SEA:ME is a cutting-edge advanced study program.It trains specialists in Code-driven Mobility, Autonomous Mobility, and the future Mobility Ecosystems. With expert-led content and practical guidance.
+                { content[lang].seame}
                 <br /><br />
                 Skills:
                 C++, Qt, Python, AI/ML
@@ -40,8 +61,7 @@ export function EducationComponent() {
                 </div>
               </Link>
               <p>
-                42 is a future-proof computer science training to educate the next generation of software engineers.
-                I learned C, C++, Typescript, python, and Go. Projects include bash reimplementation, Internet Relay Chat Server, Chat Pong game app, libc reimplementation, 3D ray tracing.
+              { content[lang].ftTokyo}
                 <br /><br />
                 Skills:
                 C, C++, Docker, Typescript, Reactjs, Nestjs
@@ -62,7 +82,7 @@ export function EducationComponent() {
                 </div>
               </Link>
               <p>
-                I am majoring in economics with minors in agricultural economics and data science. I learned Keynesian economics, Marxian economics, public economics, and micro economics.
+                { content[lang].univ}
               </p>
             </div>
           </li>
