@@ -5,10 +5,10 @@ export function ContactComponent() {
     <>
       <div className="col-md-5">
         <div className="container">
-          <div className="d-flex flex-column justify-content-center align-items-center">
+          <div className="d-flex flex-column justify-content-center align-items-center mb-3">
             <img src="/profile.jpg" className="rounded-circle mb-3" width="140" alt="profile image"/>
             <h2 className="p-0 m-0">Shuta Ogura</h2>
-            <p>Software Engineer</p>
+            <p className="p-0 m-0">Software Engineer</p>
           </div>
           <div className="d-flex justify-content-center">
             <ul className="m-0 p-0 d-flex flex-column align-items-left">
