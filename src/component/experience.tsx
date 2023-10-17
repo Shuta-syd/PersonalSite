@@ -10,7 +10,7 @@ export function ExperienceComponent() {
             <a
             href="https://www.toppan.com/en/"
             target="_blank"
-            className="link-offset-2 link-underline link-underline-opacity-0"
+            className="link-offset-2 link-underline link-underline-opacity-0 no-underline"
             >
               <div className="d-flex align-items-center mb-2 gap_class">
                 <img className="icon-img" src="/TOPPAN.svg" width="35"/>
