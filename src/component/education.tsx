@@ -52,8 +52,9 @@ export function EducationComponent(props: { lang: string }) {
             <span className="mb-2">April 2022 - June 2023 </span>
             <div className="content">
               <Link
-              href="https://www.42network.org/campuses/42-tokyo/"
-              className="link-offset-2 link-underline link-underline-opacity-0 no-underline"
+                href="https://www.42network.org/campuses/42-tokyo/"
+                target="_blank"
+                className="link-offset-2 link-underline link-underline-opacity-0 no-underline"
               >
                 <div className="d-flex align-items-center mb-2 gap_class">
                   <img className="icon-img" src="/42Tokyo.svg" width="35"/>
